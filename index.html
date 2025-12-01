@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tienda - Inicio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- CDN para animaciones ligeras y potentes -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="logo" href="index.html">
+        <img src="assets/logo.svg" alt="logo" class="logo-img">
+        <span class="brand">MiTienda</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="hero">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 class="title">Ropa con estilo y sostenibilidad</h1>
+          <p class="subtitle">Colecciones atemporales, diseño cuidado y materiales responsables.</p>
+          <div class="hero-actions">º       º
+            <a class="btn" href="tienda.html">Ver colección</a>
+            <a class="btn ghost" href="#about">Conócenos</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card" id="visual-card">
+            <!-- Placeholder para animación sofisticada (renderizado lazy) -->
+            <div class="fabric"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container" id="about">
+      <h2 class="section-title">Por qué elegirnos</h2>
+      <div class="feature-grid">
+        <article class="feature">
+          <h3>Calidad</h3>
+          <p>Prendas diseñadas para durar, costuras y materiales premium.</p>
+        </article>
+        <article class="feature">
+          <h3>Sostenibilidad</h3>
+          <p>Producción responsable y procesos de baja huella.</p>
+        </article>
+        <article class="feature">
+          <h3>Envío rápido</h3>
+          <p>Envíos a todo el país con seguimiento y devoluciones sencillas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="preview container">
+      <h2 class="section-title">Selección destacada</h2>
+      <div class="cards" id="preview-cards">
+        <!-- Las tarjetas se animan al entrar en viewport -->
+        <article class="card">
+          <img loading="lazy" src="assets/placeholder-1.jpg" alt="Producto 1">
+          <h4>Chaqueta Urbana</h4>
+          <p class="muted">Desde $79</p>
+        </article>
+        <article class="card">
+          <img loading="lazy" src="assets/placeholder-2.jpg" alt="Producto 2">
+          <h4>Camiseta Eco</h4>
+          <p class="muted">Desde $29</p>
+        </article>
+        <article class="card">
+          <img loading="lazy" src="assets/placeholder-3.jpg" alt="Producto 3">
+          <h4>Pantalón Relax</h4>
+          <p class="muted">Desde $49</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 MiTienda • <a href="contacto.html">Contacto</a></p>
+    </div>
+  </footer>
+</body>
+</html>

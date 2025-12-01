@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contacto - MiTienda</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="logo" href="index.html">
+        <img src="assets/logo.svg" alt="logo" class="logo-img">
+        <span class="brand">MiTienda</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-main">
+    <h1 class="section-title">Contacto</h1>
+    <p class="muted">Escríbenos para dudas, pedidos o colaboraciones.</p>
+
+    <form class="contact-form" id="contact-form">
+      <label>
+        Nombre
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Correo electrónico
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Mensaje
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 MiTienda</p>
+    </div>
+  </footer>
+
+</body>
+</html>
